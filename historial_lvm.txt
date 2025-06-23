@@ -1,0 +1,79 @@
+    1  fidsk -l
+    2  sudo fdisk -l
+    3  exit
+    4  ls -l
+    5  vagrant halt
+    6  fdisk
+    7  fdisk --help
+    8  sudo fdisk
+    9  lsblk
+   10  sudo fdisk sdb
+   11  fdisk sdb
+   12  sudo fdisk sdb
+   13  sudo fdisk /dev/sdb
+   14  lsblk
+   15  sudo fdisk /dev/sdc/
+   16  sudo fdisk /dev/sdc
+   17  free
+   18  free -h
+   19  sudo mkswap /dev/sdc1
+   20  free -h
+   21  sudo swapon /dev/sdc1
+   22  free -h
+   23  swapon -s
+   24  cat /proc/swaps 
+   25  sudo fdisk /dev/sdd
+   26  sudo fdisk -l
+   27  lsblk
+   28  exit
+   29  lsblk
+   30  sudo fdisk
+   31  sudo fdisk /dev/sdc
+   32  lsblk
+   33  sudo fdisk /dev/sdd
+   34  lsblk
+   35  free
+   36  free -h
+   37  sudo mkswap /dev/sdd1
+   38  free -h
+   39  sudo swapon /dev/sdd1
+   40  free -h
+   41  sudo fdisk /dev/sdc
+   42  sudo wipefs -a /dev/sdc1
+   43  sudo pvcreate /dev/sdd2 /dev/sdd3 /dev/sdd5 /dev/sdd6 /dev/sdc1 /dev/sdc2
+   44  sudo pvs
+   45  sudo vgcreate vg_datos /dev/sdc1 /dev/sdd2
+   46  sudo vgs
+   47  sudo pvs
+   48  sudo vgcreate vg_web /dev/sdc2
+   49  sudo pvs
+   50  sudo lvcreate -L 1G vg_web -n lv_web1
+   51  sudo lvcreate -L 512M vg_web -n lv_web2
+   52  sudo lvcreate -L 512M vg_web -n lv_web3
+   53  sudo lvs
+   54  sudo pvs
+   55  sudo fdisk -l
+   56  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web1
+   57  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web2
+   58  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web3
+   59  exit
+   60  ls 
+   61  ls -l
+   62  ll
+   63  cd .ssh/
+   64  ll
+   65  cd ..
+   66  sudo fdisk
+   67  lsblk
+   68  git clone https://github.com/nicolas-Perz/TP2_Perez_Nicolas
+   69  ll
+   70  cd TP2_Perez_Nicolas/
+   71  ll
+   72  sudo pvs
+   73  sudo pvs > pvs.txt
+   74  sudo vgs
+   75  sudo vgs > vgs.txt
+   76  sudo lvs
+   77  sudo lvs > lvs.txt
+   78  history
+   79  history > historial_lvm.txt
